@@ -153,7 +153,8 @@ timeout: 1607334641
 contract UTXO: ef44a5ee9e481b8eb2343d8e46417281a90a02051f3bc1ef901229fcab5b555f:1
 ```
 
-1. Run the following command:
+1. Wait for MTP timeout to arrive.
+2. Run the following command:
     ```
     $ cargo run -- \
         timeout-htlc \
@@ -174,6 +175,8 @@ contract UTXO: ef44a5ee9e481b8eb2343d8e46417281a90a02051f3bc1ef901229fcab5b555f:
         --timeout 1607334641 \
         --buyer-address slptest:qqcjtkw3a3mdh26y0ryrtfmxf4y2jhle6y72nalmlq \
         --uri http://<rpcuser>:<rpcpassword>@127.0.0.1:7777
+    contract_amount: 10000
+    token_id: TokenId(Sha256d(bb309e48930671582bea508f9a1d9b491e49b69be3d6f372dc08da2ac6e90eb7))
+    dff9d9964d5276794d82f5e930aeb9f3a2088dd34744a6d815e89e19d6fd4203
     ```
-2. Wait for MTP timeout to arrive.
 3. HTLC refunded!
